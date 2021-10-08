@@ -1,4 +1,4 @@
-projects = 
+const projects = 
 {
 proj1: 
 {title:"Face Mask Detector",
