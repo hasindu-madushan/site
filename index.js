@@ -1,7 +1,3 @@
-// let obj = projects;
-
-// let projectIds = {};
-
 function setProjectCardData(elem, projectObj) {
     elem.children[0].setAttribute("src", projectObj.imgs[0]);
     elem.children[1].innerHTML = projectObj.title;

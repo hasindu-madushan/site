@@ -2,9 +2,9 @@ projects =
 {
 proj1: 
 {title:"Face Mask Detector",
-imgs:["img/projects/face-mask-detector-couple.png", "img/projects/face-mask-detector-code1.png", 
-      "img/projects/face-mask-detector-code2.png", "img/projects/face-mask-detector-dataset.png", 
-      "img/projects/face-mask-detector-crowd.png"],
+imgs:["img/projects/face-mask-detector-couple.png", "img/projects/face-mask-detector-code1.PNG", 
+      "img/projects/face-mask-detector-code2.PNG", "img/projects/face-mask-detector-dataset.PNG", 
+      "img/projects/face-mask-detector-crowd.PNG"],
 desc:"In this project, I created and trained a CNN model to take a face image as an input \
 and predict whether the person is wearing a mask or not. First, It detects faces using a \
 haar cascade classifier in OpenCV and then crops the face image and sends it to the CNN \
@@ -19,7 +19,7 @@ skills:["Tensorflow", "Python", "Javascript", "machine learning", "OpenCV", "ima
 
 proj2: 
 {title:"Wizard Chess",
-imgs:["img/projects/chess-game.png", "img/projects/chess-game-code1.png", "img/projects/chess-game-code2.png"],
+imgs:["img/projects/chess-game.PNG", "img/projects/chess-game-code1.PNG", "img/projects/chess-game-code2.PNG"],
 desc:"Wizard chess is a 3d chess game where pieces have live animations made with Unity engine. \
 This is based on the famous Harry Potter movie. First, I developed the MiniMax  AI algorithm \
 from scratch in C#. The miniMax algorithm is an AI technique used in turn-based games. It is a \
@@ -31,7 +31,7 @@ skills:["unity", "C#", "AI", "Blender"]},
 
 proj3: 
 {title:"Simple Renderer",
-imgs:["img/projects/simple-renderer-1.png", "img/projects/simple-renderer-code1.png", "img/projects/simple-renderer-code2.png", "img/projects/simple-renderer-code3.png"],
+imgs:["img/projects/simple-renderer-1.PNG", "img/projects/simple-renderer-code1.PNG", "img/projects/simple-renderer-code2.PNG", "img/projects/simple-renderer-code3.PNG"],
 desc:"This is an ongoing project. I am trying to create a portable and easy-to-use c++ library \
 that can create and reander simple 3d scenes using OpenGL specification. I am doing this project to improve my \
 knowledge of real-time rendering. It currently has features such as basic lightning with \
@@ -45,7 +45,7 @@ skills:["C++", "C", "OpenGL", "realtime rendering", "GLSL"]},
 
 proj4: 
 {title:"Railway Ticketing System - PC controller",
-imgs:["img/javafx-RTS.png"],
+imgs:["img/projects/javafx-RTS.PNG"],
 desc:"This was a part of a 3rd-year university project (group). The project was to create an easy, \
 reliable, and fast method to overcome issues of using an ordinary paper ticket system for trains in \
 Sri Lanka. It consists of automatic gates, swiping cards, and a hand-held card scanning device.  \
@@ -60,7 +60,7 @@ skills:["Java", "JavaFX", "Arduino"]},
 
 proj5:
 {title:"Multizip",
-imgs:["img/projects/multizip-cover.png", "img/projects/multizip-code1.png", "img/projects/multizip-code2.png"],
+imgs:["img/projects/multizip-cover.png", "img/projects/multizip-code1.PNG", "img/projects/multizip-code2.PNG"],
 desc:"One problem with the built-in python Zip file module was it cannot extract zip files with multiple \
 parts. We can create an archive with multiple parts in order to reduce the size of the zip file and make \
 them easy to transfer. I created this Multizip python module to extract files from this kind of multiple \
@@ -70,9 +70,9 @@ skills:["Python", "ZIP", "Modules", "Zlib", "Compression"]},
 
 proj6:
 {title:"Football Data Analyzer",
-imgs:["img/projects/football-analyzer-1.png", "img/projects/football-analyzer-code1.png", 
-    "img/projects/football-analyzer-2.png", "img/projects/football-analyzer-code2.png", 
-    "img/projects/football-analyzer-code3.png"],
+imgs:["img/projects/football-analyzer-1.PNG", "img/projects/football-analyzer-code1.PNG", 
+    "img/projects/football-analyzer-2.PNG", "img/projects/football-analyzer-code2.PNG", 
+    "img/projects/football-analyzer-code3.PNG"],
 desc:"This is a custom Python application I developed for a client. He wanted to analyze his performance \
 in the football matches based on facts such as sprint distance, duration, heat maps, sprint maps, heart \
 rate data, etc. He could record the GPS coordinates and heart rate data to a .gpx file using his smartwatch. \
