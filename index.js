@@ -8,9 +8,9 @@ function addProjectLinks(links) {
     let linksContainer = projectView.querySelector(".links");
     linksContainer.innerHTML = "";
 
-    for (let link of links) {
+    links.forEach((link) => {
         linksContainer.innerHTML += "<li><p>" + link.name + "</p><a href=" + link.ref + ">" + link.ref + "</a></li>";
-    }
+    });
 }
 
 function addProjectSkills(skills) {

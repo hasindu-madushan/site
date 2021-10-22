@@ -110,8 +110,9 @@ body {
 
 .profile-pic {
     margin-top: 20px;
-    width: 100px;
+    width: 75px;
     border-radius: 50%;
+    
 }
 
 .middle-subheading-1 {
@@ -219,6 +220,7 @@ hr {
     color: white;
     transition: background-color 1.5s, width 1s;
     cursor: pointer;
+    font-weight: 600;
 }
 
 .contact-button:hover {
@@ -236,7 +238,8 @@ hr {
 }
 
 .project-container-long {
-    height: 50vw;
+    /* height: 50vw; */
+    height: 75vw;
 }
 
 .more-less {
@@ -516,7 +519,8 @@ hr {
     }
 
     .project-container-long {
-        height: 470vw;
+        /* height: 470vw; */
+        height: 690vw;
     }
 
     .project-card p{
@@ -567,7 +571,7 @@ hr {
     }
 
     .project-container-long {
-        height: 126vw;
+        height: 215vw;
     }
 
     .feature-container {
