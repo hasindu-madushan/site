@@ -113,7 +113,7 @@ body {
     margin-top: 20px;
     width: 75px;
     border-radius: 50%;
-    
+    border: 5px solid #279EFF;
 }
 
 .middle-subheading-1 {
