@@ -40,13 +40,13 @@ export default function About() {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        viewport={{ once: true, margin: '-100px' }}
+        viewport={{ once: false, margin: '-100px' }}
         transition={{ duration: 0.5 }}
       >
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           className="section-title"
         >
           About Me
@@ -55,7 +55,7 @@ export default function About() {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           transition={{ delay: 0.1 }}
           className="text-lg text-gray-700 max-w-3xl mb-12 leading-relaxed"
         >
@@ -69,7 +69,7 @@ export default function About() {
         <motion.h3
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           transition={{ delay: 0.2 }}
           className="text-2xl font-bold text-gray-900 mb-8"
         >
@@ -84,11 +84,12 @@ export default function About() {
                 key={skill.title}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                viewport={{ once: false }}
                 transition={{ delay: 0.1 * i }}
-                className="p-6 rounded-xl border-2 border-gray-200 bg-white shadow-sm hover:border-primary-300 hover:shadow-md transition-all duration-300"
+                whileHover={{ scale: 1.02 }}
+                className="group p-6 rounded-xl border-2 border-gray-200 bg-white shadow-sm hover:-translate-y-1 hover:border-primary-300 hover:shadow-lg transition-all duration-300"
               >
-                <div className="w-12 h-12 rounded-lg bg-primary-100 flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-lg bg-primary-100 flex items-center justify-center mb-4 group-hover:bg-primary-200 transition-colors duration-300">
                   <Icon className="text-primary-700" size={24} />
                 </div>
                 <h4 className="text-lg font-bold text-gray-900 mb-2">

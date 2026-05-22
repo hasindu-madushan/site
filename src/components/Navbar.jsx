@@ -10,13 +10,20 @@ const navLinks = [
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
+  const [pastHero, setPastHero] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20)
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20)
+      setPastHero(window.scrollY > window.innerHeight * 0.7)
+    }
+    handleScroll()
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+
+  const base = import.meta.env.BASE_URL
 
   return (
     <motion.nav
@@ -28,11 +35,21 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <a href="#" className="text-xl font-bold text-gray-900">
-            HM
-          </a>
+          <motion.a
+            href="#"
+            className="flex items-center gap-3"
+            initial={{ scale: 0, opacity: 0 }}
+            animate={pastHero ? { scale: 1, opacity: 1 } : { scale: 0, opacity: 0 }}
+            transition={{ type: 'spring', stiffness: 260, damping: 20 }}
+          >
+            <img
+              src={`${base}img/profile-pic-1.jpg`}
+              alt="Hasindu Madushan"
+              className="w-9 h-9 rounded-full object-cover border-2 border-primary-200"
+            />
+          </motion.a>
 
-          <div className="hidden md:flex items-center gap-8">
+          <div className={`hidden md:flex items-center gap-8 ${pastHero ? '' : 'ml-auto'}`}>
             {navLinks.map((link) => (
               <a
                 key={link.name}
