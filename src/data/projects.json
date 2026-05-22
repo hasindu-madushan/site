@@ -8,9 +8,9 @@
   },
   "proj2": {
     "title": "Kaya AI Platform — Low-Code Agentic AI",
-    "imgs": ["/img/projects/kaya-platform.png"],
+    "imgs": ["/img/projects/kaya-ai-workflow-1.png"],
     "desc": "Implemented core features on the Kaya AI Platform, a low-code solution for building and managing agentic AI systems supporting text and audio-based conversational agents with RAG, graph RAG, MCP, and self-learning integrations. Built the data lineage feature to track and visualise data flow across agent graphs.",
-    "links": [],
+    "links": [{"name": "Website", "ref": "https://kayaintelligence.com/platform/"}],
     "skills": ["Python", "LangChain", "LangGraph", "FastAPI", "RAG", "Graph RAG", "MCP", "AWS", "Docker"]
   },
   "proj3": {

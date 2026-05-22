@@ -2,10 +2,11 @@ import { motion } from 'framer-motion'
 import { ExternalLink, Github } from 'lucide-react'
 
 export default function ProjectCard({ project, onClick }) {
-  const imgSrc = project.imgs?.[0] || '/img/projects/placeholder.svg'
+  const base = import.meta.env.BASE_URL
+  const imgSrc = base + (project.imgs?.[0] || '/img/projects/placeholder.svg').replace(/^\//, '')
 
   const handleImgError = (e) => {
-    e.target.src = '/img/projects/placeholder.svg'
+    e.target.src = base + 'img/projects/placeholder.svg'
   }
 
   return (

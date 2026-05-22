@@ -4,13 +4,16 @@ import { X, ChevronLeft, ChevronRight, ExternalLink, Github } from 'lucide-react
 
 export default function ProjectModal({ project, onClose }) {
   const [activeImg, setActiveImg] = useState(0)
+  const base = import.meta.env.BASE_URL
 
-  const imgs = project.imgs?.length ? project.imgs : ['/img/projects/placeholder.svg']
+  const imgs = (project.imgs?.length ? project.imgs : ['/img/projects/placeholder.svg']).map(
+    (p) => base + p.replace(/^\//, '')
+  )
   const nextImg = () => setActiveImg((prev) => (prev + 1) % imgs.length)
   const prevImg = () => setActiveImg((prev) => (prev - 1 + imgs.length) % imgs.length)
 
   const handleImgError = (e) => {
-    e.target.src = '/img/projects/placeholder.svg'
+    e.target.src = base + 'img/projects/placeholder.svg'
   }
 
   return (

@@ -1,13 +1,7 @@
 import { motion } from 'framer-motion'
 import { Particles } from '@tsparticles/react'
 import { loadSlim } from '@tsparticles/slim'
-import { ArrowDown, MapPin } from 'lucide-react'
-
-const stats = [
-  { value: '60+', label: 'Projects Delivered' },
-  { value: '4+', label: 'Years Industry Experience' },
-  { value: '8+', label: 'Years AI/ML Experience' },
-]
+import { ArrowDown, MapPin, Github, Linkedin } from 'lucide-react'
 
 const techStack = [
   'Python', 'LangChain', 'LangGraph', 'PyTorch', 'TensorFlow',
@@ -33,15 +27,8 @@ export default function Hero() {
             number: { value: 80, density: { enable: true, value_area: 600 } },
             color: { value: ['#14b8a6', '#0d9488', '#0f766e', '#2dd4bf'] },
             shape: { type: 'circle' },
-            opacity: { value: 0.5, random: { enable: true, minimumValue: 0.2 } },
+            opacity: { value: 0.8, random: { enable: true, minimumValue: 0.4 } },
             size: { value: { min: 2, max: 5 }, random: true },
-            line_linked: {
-              enable: true,
-              distance: 180,
-              color: '#14b8a6',
-              opacity: 0.25,
-              width: 1.5,
-            },
             move: {
               enable: true,
               speed: 2,
@@ -54,11 +41,8 @@ export default function Hero() {
           interactivity: {
             detect_on: 'canvas',
             events: {
-              onhover: { enable: true, mode: 'grab' },
+              onhover: { enable: false },
               onclick: { enable: false },
-            },
-            modes: {
-              grab: { distance: 200, line_linked: { opacity: 0.5 } },
             },
           },
           retina_detect: true,
@@ -80,14 +64,23 @@ export default function Hero() {
           >
             <div className="w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 rounded-full overflow-hidden border-4 border-primary-200 shadow-2xl shadow-primary-100">
               <img
-                src="/img/profile-pic-1.jpg"
+                src={`${import.meta.env.BASE_URL}img/profile-pic-1.jpg`}
                 alt="Hasindu Madushan"
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="absolute -bottom-2 -right-2 w-14 h-14 bg-primary-600 rounded-full flex items-center justify-center shadow-lg">
-              <span className="text-white text-lg font-bold">AI</span>
-            </div>
+            <a href="#projects" className="absolute -top-1 -left-1 w-14 h-14 bg-white border-2 border-primary-300 rounded-full flex items-center justify-center shadow-lg hover:bg-primary-50 hover:scale-110 transition-all duration-300">
+              <span className="text-primary-600 text-[10px] font-bold text-center leading-tight px-0.5">View My Work</span>
+            </a>
+            <a href="#contact" className="absolute -bottom-1 -left-1 w-14 h-14 bg-white border-2 border-primary-300 rounded-full flex items-center justify-center shadow-lg hover:bg-primary-50 hover:scale-110 transition-all duration-300">
+              <span className="text-primary-600 text-[10px] font-bold text-center leading-tight px-0.5">Get In Touch</span>
+            </a>
+            <a href="https://github.com/hasindu-madushan" target="_blank" rel="noopener noreferrer" className="absolute -top-1 -right-1 w-12 h-12 bg-white border-2 border-gray-200 rounded-full flex items-center justify-center shadow-lg hover:border-primary-300 hover:scale-110 transition-all duration-300">
+              <Github size={18} className="text-gray-700" />
+            </a>
+            <a href="https://linkedin.com/in/hasindu-madushan" target="_blank" rel="noopener noreferrer" className="absolute -bottom-1 -right-1 w-12 h-12 bg-white border-2 border-gray-200 rounded-full flex items-center justify-center shadow-lg hover:border-primary-300 hover:scale-110 transition-all duration-300">
+              <Linkedin size={18} className="text-gray-700" />
+            </a>
           </motion.div>
 
           <div className="flex-1 text-center lg:text-left">
@@ -96,8 +89,8 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <p className="text-primary-600 font-semibold mb-2 text-lg flex items-center justify-center lg:justify-start gap-2">
-                <MapPin size={18} /> Colombo, Sri Lanka
+              <p className="text-primary-600 font-semibold mb-2 text-sm flex items-center justify-center lg:justify-start gap-1">
+                <MapPin size={14} /> Colombo, Sri Lanka
               </p>
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-4 leading-tight">
                 Hasindu
@@ -106,20 +99,11 @@ export default function Hero() {
               <p className="text-xl sm:text-2xl text-gray-600 mb-3 font-medium">
                 Senior Software Engineer — AI & ML
               </p>
-              <p className="text-base text-gray-500 mb-8 max-w-lg mx-auto lg:mx-0">
+              {/* <p className="text-base text-gray-500 mb-8 max-w-lg mx-auto lg:mx-0">
                 Building production LLM and agentic AI systems. 4+ years in AI engineering.
-              </p>
+              </p> */}
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10">
-                <a href="#projects" className="btn-primary">
-                  View My Work
-                </a>
-                <a href="#contact" className="inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-gray-300 text-gray-700 font-medium rounded-lg hover:border-primary-600 hover:text-primary-600 transition-colors">
-                  Get In Touch
-                </a>
-              </div>
-
-              <div className="grid grid-cols-3 gap-4 max-w-md mx-auto lg:mx-0">
+              {/* <div className="grid grid-cols-3 gap-4 max-w-md mx-auto lg:mx-0">
                 {stats.map((stat, i) => (
                   <motion.div
                     key={stat.label}
@@ -132,7 +116,7 @@ export default function Hero() {
                     <p className="text-xs sm:text-sm text-gray-500 mt-1">{stat.label}</p>
                   </motion.div>
                 ))}
-              </div>
+              </div> */}
             </motion.div>
           </div>
         </div>
@@ -143,7 +127,7 @@ export default function Hero() {
           {[...techStack, ...techStack].map((tech, i) => (
             <span
               key={i}
-              className="mx-6 px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-600 shadow-sm"
+              className="mx-6 px-4 py-2 bg-white rounded-full text-xs font-normal text-gray-400 shadow-sm"
             >
               {tech}
             </span>
