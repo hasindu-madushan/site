@@ -1,9 +1,12 @@
 import { motion } from 'framer-motion'
 import { ExternalLink, Github } from 'lucide-react'
 
-export default function ProjectCard({ project, onClick, index }) {
-  const isLarge = index % 3 === 0
-  const isWide = index % 5 === 2
+export default function ProjectCard({ project, onClick }) {
+  const imgSrc = project.imgs?.[0] || '/img/projects/placeholder.svg'
+
+  const handleImgError = (e) => {
+    e.target.src = '/img/projects/placeholder.svg'
+  }
 
   return (
     <motion.div
@@ -13,14 +16,13 @@ export default function ProjectCard({ project, onClick, index }) {
       viewport={{ once: true, margin: '-50px' }}
       whileHover={{ y: -4 }}
       onClick={() => onClick(project)}
-      className={`group cursor-pointer rounded-xl overflow-hidden bg-white border border-gray-200 hover:border-primary-300 hover:shadow-xl transition-all duration-300 ${
-        isLarge ? 'md:row-span-2' : ''
-      } ${isWide ? 'md:col-span-2' : ''}`}
+      className="group cursor-pointer rounded-xl overflow-hidden bg-white border border-gray-200 hover:border-primary-300 hover:shadow-xl transition-all duration-300"
     >
-      <div className={`relative overflow-hidden ${isLarge ? 'aspect-[4/5]' : 'aspect-video'}`}>
+      <div className="relative overflow-hidden aspect-video">
         <img
-          src={project.imgs[0]}
+          src={imgSrc}
           alt={project.title}
+          onError={handleImgError}
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

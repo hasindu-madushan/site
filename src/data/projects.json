@@ -1622,5 +1622,12 @@
     "desc": "3D tower defense game developed as a freelance project. Players defeat enemy waves by placing turrets, bombs, and other structures. 3 levels with increasing difficulty. Enemy characters use state machine-based AI. All 3D models created in Blender 3D.",
     "links": [],
     "skills": ["Unity", "C#", "Blender 3D", "Game AI", "State Machines"]
+  },
+  "proj14": {
+    "title": "Credit Card Fraud Detection With Catboost",
+    "imgs": ["/img/projects/cred-fraude-det-correlations.jpg", "/img/projects/cred-fraude-det-confus.jpg"],
+    "desc": "In this project I trained Catboost algorithm for detecting credit card frauds. This problem belongs to a anomaly detection category of machine learning. I had a labeled dataset with 0.01% of fraud rate. Goal was to achieve maximum recall with acceptable precision.",
+    "links": [],
+    "skills": ["Machine Learning", "Scikit-Learn", "Python", "Pandas", "Data Science"]
   }
 }

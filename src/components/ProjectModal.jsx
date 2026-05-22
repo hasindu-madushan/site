@@ -5,8 +5,13 @@ import { X, ChevronLeft, ChevronRight, ExternalLink, Github } from 'lucide-react
 export default function ProjectModal({ project, onClose }) {
   const [activeImg, setActiveImg] = useState(0)
 
-  const nextImg = () => setActiveImg((prev) => (prev + 1) % project.imgs.length)
-  const prevImg = () => setActiveImg((prev) => (prev - 1 + project.imgs.length) % project.imgs.length)
+  const imgs = project.imgs?.length ? project.imgs : ['/img/projects/placeholder.svg']
+  const nextImg = () => setActiveImg((prev) => (prev + 1) % imgs.length)
+  const prevImg = () => setActiveImg((prev) => (prev - 1 + imgs.length) % imgs.length)
+
+  const handleImgError = (e) => {
+    e.target.src = '/img/projects/placeholder.svg'
+  }
 
   return (
     <AnimatePresence>
@@ -35,17 +40,18 @@ export default function ProjectModal({ project, onClose }) {
             </button>
           </div>
 
-          {project.imgs.length > 1 && (
+          {imgs.length > 0 && (
             <div className="relative aspect-video bg-gray-100">
               <motion.img
                 key={activeImg}
-                src={project.imgs[activeImg]}
+                src={imgs[activeImg]}
                 alt={project.title}
+                onError={handleImgError}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 className="w-full h-full object-contain"
               />
-              {project.imgs.length > 1 && (
+              {imgs.length > 1 && (
                 <>
                   <button
                     onClick={prevImg}
@@ -64,9 +70,9 @@ export default function ProjectModal({ project, onClose }) {
             </div>
           )}
 
-          {project.imgs.length > 1 && (
+          {imgs.length > 1 && (
             <div className="flex gap-2 p-4 overflow-x-auto">
-              {project.imgs.map((img, i) => (
+              {imgs.map((img, i) => (
                 <button
                   key={i}
                   onClick={() => setActiveImg(i)}
@@ -74,7 +80,7 @@ export default function ProjectModal({ project, onClose }) {
                     i === activeImg ? 'border-primary-500' : 'border-transparent'
                   }`}
                 >
-                  <img src={img} alt="" className="w-full h-full object-cover" />
+                  <img src={img} alt="" onError={handleImgError} className="w-full h-full object-cover" />
                 </button>
               ))}
             </div>
