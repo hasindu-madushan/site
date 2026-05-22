@@ -106,5 +106,26 @@
     "desc": "3D tower defense game developed as a freelance project. Players defeat enemy waves by placing turrets, bombs, and other structures. 3 levels with increasing difficulty. Enemy characters use state machine-based AI. All 3D models created in Blender 3D.",
     "links": [],
     "skills": ["Unity", "C#", "Blender 3D", "Game AI", "State Machines"]
+  },
+  "proj16": {
+    "title": "Online Course Platform Front-end",
+    "imgs": ["/img/projects/ilearn-home.PNG", "/img/projects/ilearn-code-1.PNG", "/img/projects/ilearn-dashboard.PNG", "/img/projects/ilearn-courses-view.PNG", "/img/projects/ilearn-course-page.PNG"],
+    "desc": "I developed this front end for a University group project using Vue js framework. This is for an online video course management system. Users can sign up as teachers or students. Teachers can create courses and upload edit course content. Students can enroll in courses and watch course videos. And also it has an admin account type with the privilege to delete courses and add/delete new categories. It also has features like course search and sort. For the front end, I used bootstrap and css for styling.",
+    "links": [{"name": "Demo", "ref": "https://project-ilearn.herokuapp.com"}, {"name": "Source code", "ref": "https://github.com/hasindu-madushan/LMS"}],
+    "skills": ["Vue js", "Javascript", "CSS", "Bootstrap", "Authentication", "HTML"]
+  },
+  "proj17": {
+    "title": "Railway Ticketing System - PC controller",
+    "imgs": ["/img/projects/javafx-RTS.PNG"],
+    "desc": "This was a part of a 3rd-year university project (group). The project was to create an easy, reliable, and fast method to overcome issues of using an ordinary paper ticket system for trains in Sri Lanka. It consists of automatic gates, swiping cards, and a hand-held card scanning device. Automatic gates are controlled by Arduino. Passengers can open gates by swiping their cards at the gates. I created this Java application to connect the computer at the station to the central server. And also communicate with Arduino to control the gate based on the command send by the server. And also it comes with a very easy-to-use JavaFX GUI to connect gates and view status. Jserialcomm library was used to connect the application to the Arduino board inside the gate. And also Apache HTTP client to make HTTP requests.",
+    "links": [],
+    "skills": ["Java", "JavaFX", "Arduino"]
+  },
+  "proj18": {
+    "title": "Multizip",
+    "imgs": ["/img/projects/multizip-cover.png", "/img/projects/multizip-code1.PNG", "/img/projects/multizip-code2.PNG"],
+    "desc": "One problem with the built-in python Zip file module was it cannot extract zip files with multiple parts. We can create an archive with multiple parts in order to reduce the size of the zip file and make them easy to transfer. I created this Multizip python module to extract files from this kind of multiple zip file. It currently does not support encryptions. But I am looking forward to adding that too.",
+    "links": [{"name": "Source code", "ref": "https://github.com/hasindu-madushan/MultiZip"}],
+    "skills": ["Python", "ZIP", "Modules", "Zlib", "Compression"]
   }
 }
