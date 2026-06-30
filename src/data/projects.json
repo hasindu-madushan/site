@@ -14,11 +14,11 @@
     "skills": ["Python", "LangChain", "LangGraph", "FastAPI", "RAG", "Graph RAG", "MCP", "AWS", "Docker"]
   },
   "proj3": {
-    "title": "Med-QnA — Medical Question Answering System",
-    "imgs": ["/img/projects/med-qna-ui.png", "/img/projects/med-qna-model-comparison.png"],
-    "desc": "AI-powered medical question answering system that provides accurate, context-aware responses to healthcare queries. Built with advanced NLP techniques and fine-tuned language models to handle domain-specific medical terminology.",
+    "title": "GeniusLaunch (in progress) — AI-Powered Startup Idea Analyzer",
+    "imgs": ["/img/projects/geniuslaunch-banner.svg", "/img/projects/geniuslaunch-comp-analysis.png", "/img/projects/geniuslaunch-landing.png"],
+    "desc": "A platform that transforms raw startup ideas into validated, market-ready launch plans. It analyses your idea against real competitors, digs into real-world sources for genuine user sentiment, and delivers a comprehensive competitive landscape — all through a guided step-by-step experience. Built for founders who want to move fast and validate before they build.",
     "links": [],
-    "skills": ["LLM", "NLP", "Fine-tuning", "Python", "PyTorch", "Hugging Face", "Medical AI"]
+    "skills": ["Gen AI", "Multi-agent systems", "Fullstack development", "MCP", "LLM", "Prompt Engineering"]
   },
   "proj4": {
     "title": "SlimAtlas AI — Lightweight Browser for AI Agents",
@@ -31,97 +31,104 @@
     "skills": ["TypeScript", "Bun", "MCP", "Lightpanda", "Browser Automation", "Puppeteer", "Node.js"]
   },
   "proj5": {
+    "title": "Med-QnA — Medical Question Answering System",
+    "imgs": ["/img/projects/med-qna-ui.png", "/img/projects/med-qna-model-comparison.png"],
+    "desc": "AI-powered medical question answering system that provides accurate, context-aware responses to healthcare queries. Built with advanced NLP techniques and fine-tuned language models to handle domain-specific medical terminology.",
+    "links": [],
+    "skills": ["LLM", "NLP", "Fine-tuning", "Python", "PyTorch", "Hugging Face", "Medical AI"]
+  },
+  "proj6": {
     "title": "Fine-tuning LLaMA 7B for Intent Classification",
     "imgs": ["/img/projects/llama-finetune.png"],
     "desc": "Led a team of 10 to build and annotate a domain-specific chat dataset over 1.5 months. Applied transfer learning, LoRA, and quantisation to fine-tune LLaMA 7B for 50+ intent classes, achieving 80% accuracy with a lightweight architecture.",
     "links": [],
     "skills": ["LLM", "Fine-tuning", "LoRA", "Quantisation", "NLP", "PyTorch", "Hugging Face", "Python"]
   },
-  "proj6": {
+  "proj7": {
     "title": "Kaya Apex — AI Training Platform",
     "imgs": ["/img/projects/kaya-apex.png"],
     "desc": "Designed goal-oriented prompts driving natural avatar behaviour in interactive training sessions. Built an LLM-based evaluation system assessing user performance against predefined criteria. Led optimisation effort that significantly improved platform efficiency.",
     "links": [],
     "skills": ["Prompt Engineering", "LLM", "LangChain", "LangGraph", "Python", "FastAPI"]
   },
-  "proj7": {
+  "proj8": {
     "title": "ReCodeAct Agent — Reasoning + Code Action LLM",
     "imgs": ["/img/projects/recodeact.png"],
     "desc": "Research project integrating chain-of-thought reasoning with executable code generation as the action layer, enabling error detection and significantly improving agent decision-making reliability over standard text-output agents.",
     "links": [],
     "skills": ["LLM", "Prompt Engineering", "Agentic AI", "Research", "Python"]
   },
-  "proj8": {
+  "proj9": {
     "title": "ReviewSpotter — Customer Review Analysis",
     "imgs": ["/img/projects/reviewspotter.png"],
     "desc": "Built sentiment analysis pipelines processing 100,000+ customer reviews for the travel and tourism sector. Applied advanced NLP techniques to improve detection accuracy and integrated models with Elasticsearch for efficient large-scale data retrieval and analysis.",
     "links": [],
     "skills": ["NLP", "LLM", "Sentiment Analysis", "Elasticsearch", "SQL", "Python"]
   },
-  "proj9": {
+  "proj10": {
     "title": "Dynamic Subscription Management — Kaya AI Platform",
     "imgs": ["/img/projects/kaya-subscription.png"],
     "desc": "Designed and built an event-driven integration layer connecting Kafka streams and message queues to agentic workflows. Enabled real-time workflow triggering, live streaming of agent outputs, stateful resumption of interrupted workflows, and a self-learning feedback loop.",
     "links": [],
     "skills": ["Python", "LangGraph", "Apache Kafka", "Event-Driven Architecture", "AWS", "Agentic AI"]
   },
-  "proj10": {
+  "proj11": {
     "title": "Credit Card Fraud Detection With Catboost",
     "imgs": ["/img/projects/cred-fraude-det-correlations.jpg", "/img/projects/cred-fraude-det-confus.jpg"],
     "desc": "In this project I trained Catboost algorithm for detecting credit card frauds. This problem belongs to a anomaly detection category of machine learning. I had a labeled dataset with 0.01% of fraud rate. Goal was to achieve maximum recall with acceptable precision.",
     "links": [],
     "skills": ["Machine Learning", "Scikit-Learn", "Python", "Pandas", "Data Science"]
   },
-  "proj11": {
+  "proj12": {
     "title": "Face Mask Detector",
     "imgs": ["/img/projects/face-mask-detector-couple.png", "/img/projects/face-mask-detector-code1.PNG", "/img/projects/face-mask-detector-code2.PNG", "/img/projects/face-mask-detector-dataset.PNG", "/img/projects/face-mask-detector-crowd.PNG"],
     "desc": "Created and trained a CNN model to detect whether a person is wearing a mask. Uses haar cascade classifier in OpenCV for face detection and a TensorFlow CNN model for classification. Built both a Python GUI and a browser-based web app using TensorFlow.js and OpenCV.js.",
     "links": [{"name": "Try", "ref": "https://hasindu-madushan.github.io/FaceMaskDetector/"}, {"name": "Source code", "ref": "https://github.com/hasindu-madushan/FaceMaskDetector"}],
     "skills": ["TensorFlow", "Python", "JavaScript", "OpenCV", "CNN", "Computer Vision"]
   },
-  "proj12": {
+  "proj13": {
     "title": "Football Data Analyzer",
     "imgs": ["/img/projects/football-analyzer-1.PNG", "/img/projects/football-analyzer-code1.PNG", "/img/projects/football-analyzer-2.PNG", "/img/projects/football-analyzer-2.PNG", "/img/projects/football-analyzer-code3.PNG"],
     "desc": "Custom Python application for a client to analyze football match performance — sprint distance, heat maps, sprint maps, heart rate data. Converts GPS coordinates to local x,y coordinates using ECEF transformations. Built with PyQt5, NumPy, and XML parsing for .gpx files.",
     "links": [],
     "skills": ["Python", "GPS", "PyQt", "NumPy", "Coordinate Systems", "Data Visualization"]
   },
-  "proj13": {
+  "proj14": {
     "title": "Wizard Chess — Unity 3D Game",
     "imgs": ["/img/projects/chess-game.PNG", "/img/projects/chess-game-code1.PNG", "/img/projects/chess-game-code2.PNG"],
     "desc": "3D chess game with live piece animations made in Unity, based on the Harry Potter wizard chess. Developed the MiniMax AI algorithm from scratch in C#. Created all 3D models and animations in Blender 3D.",
     "links": [],
     "skills": ["Unity", "C#", "AI", "MiniMax", "Blender 3D"]
   },
-  "proj14": {
+  "proj15": {
     "title": "Simple Renderer — C++ OpenGL Library",
     "imgs": ["/img/projects/simple-renderer-1.PNG", "/img/projects/simple-renderer-code1.PNG", "/img/projects/simple-renderer-code2.PNG", "/img/projects/simple-renderer-code3.PNG"],
     "desc": "Portable C++ library for creating and rendering simple 3D scenes using OpenGL. Features basic lighting with multiple lights, color mapping, materials, GLSL shaders, shadows, and a rich transform system. Avoids long OpenGL initialization codes with a clean scene graph API.",
     "links": [],
     "skills": ["C++", "OpenGL", "GLSL", "Real-time Rendering", "3D Graphics"]
   },
-  "proj15": {
+  "proj16": {
     "title": "Tower Defence — Unity Game",
     "imgs": ["/img/projects/tower-defence-2.PNG", "/img/projects/tower-defence-code-1.PNG", "/img/projects/tower-defence-code-2.PNG", "/img/projects/tower-defence-code-3.PNG", "/img/projects/tower-defence-menu.PNG"],
     "desc": "3D tower defense game developed as a freelance project. Players defeat enemy waves by placing turrets, bombs, and other structures. 3 levels with increasing difficulty. Enemy characters use state machine-based AI. All 3D models created in Blender 3D.",
     "links": [],
     "skills": ["Unity", "C#", "Blender 3D", "Game AI", "State Machines"]
   },
-  "proj16": {
+  "proj17": {
     "title": "Online Course Platform Front-end",
     "imgs": ["/img/projects/ilearn-home.PNG", "/img/projects/ilearn-code-1.PNG", "/img/projects/ilearn-dashboard.PNG", "/img/projects/ilearn-courses-view.PNG", "/img/projects/ilearn-course-page.PNG"],
     "desc": "I developed this front end for a University group project using Vue js framework. This is for an online video course management system. Users can sign up as teachers or students. Teachers can create courses and upload edit course content. Students can enroll in courses and watch course videos. And also it has an admin account type with the privilege to delete courses and add/delete new categories. It also has features like course search and sort. For the front end, I used bootstrap and css for styling.",
     "links": [{"name": "Demo", "ref": "https://project-ilearn.herokuapp.com"}, {"name": "Source code", "ref": "https://github.com/hasindu-madushan/LMS"}],
     "skills": ["Vue js", "Javascript", "CSS", "Bootstrap", "Authentication", "HTML"]
   },
-  "proj17": {
+  "proj18": {
     "title": "Railway Ticketing System - PC controller",
     "imgs": ["/img/projects/javafx-RTS.PNG"],
     "desc": "This was a part of a 3rd-year university project (group). The project was to create an easy, reliable, and fast method to overcome issues of using an ordinary paper ticket system for trains in Sri Lanka. It consists of automatic gates, swiping cards, and a hand-held card scanning device. Automatic gates are controlled by Arduino. Passengers can open gates by swiping their cards at the gates. I created this Java application to connect the computer at the station to the central server. And also communicate with Arduino to control the gate based on the command send by the server. And also it comes with a very easy-to-use JavaFX GUI to connect gates and view status. Jserialcomm library was used to connect the application to the Arduino board inside the gate. And also Apache HTTP client to make HTTP requests.",
     "links": [],
     "skills": ["Java", "JavaFX", "Arduino"]
   },
-  "proj18": {
+  "proj19": {
     "title": "Multizip",
     "imgs": ["/img/projects/multizip-cover.png", "/img/projects/multizip-code1.PNG", "/img/projects/multizip-code2.PNG"],
     "desc": "One problem with the built-in python Zip file module was it cannot extract zip files with multiple parts. We can create an archive with multiple parts in order to reduce the size of the zip file and make them easy to transfer. I created this Multizip python module to extract files from this kind of multiple zip file. It currently does not support encryptions. But I am looking forward to adding that too.",
