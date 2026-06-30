@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+	<defs>
+		<linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+			<stop offset="0%" style="stop-color:#ef4444;stop-opacity:1" />
+			<stop offset="50%" style="stop-color:#9333ea;stop-opacity:1" />
+			<stop offset="100%" style="stop-color:#6b21a8;stop-opacity:1" />
+		</linearGradient>
+		<filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+			<feGaussianBlur stdDeviation="10"/>
+		</filter>
+		<filter id="blurSm" x="-100%" y="-100%" width="300%" height="300%">
+			<feGaussianBlur stdDeviation="3"/>
+		</filter>
+	</defs>
+
+	<!-- background -->
+	<rect width="1920" height="1080" fill="url(#bgGrad)"/>
+
+	<!-- logo group, scaled up and centered -->
+	<g transform="translate(960,540) scale(6) translate(-47,-47)">
+		<!-- shadow: main diamond -->
+		<rect x="22" y="22" width="50" height="50" transform="rotate(45 47 47)" fill="rgba(0,0,0,0.25)" filter="url(#blur)"/>
+		<!-- shadow: small diamonds -->
+		<rect x="68" y="14" width="10" height="10" transform="rotate(45 73 19)" fill="rgba(0,0,0,0.25)" filter="url(#blurSm)"/>
+		<rect x="78" y="26" width="8" height="8" transform="rotate(45 82 30)" fill="rgba(0,0,0,0.25)" filter="url(#blurSm)"/>
+		<rect x="86" y="40" width="6" height="6" transform="rotate(45 89 43)" fill="rgba(0,0,0,0.25)" filter="url(#blurSm)"/>
+		<rect x="58" y="6" width="6" height="6" transform="rotate(45 61 9)" fill="rgba(0,0,0,0.25)" filter="url(#blurSm)"/>
+
+		<!-- actual shapes on top -->
+		<rect x="22" y="22" width="50" height="50" transform="rotate(45 47 47)" fill="url(#bgGrad)"/>
+		<path d="M52 38 L52 30 L38 30 L38 62 L58 62 L58 50 L48 50 L48 56 L50 56 L50 58 L42 58 L42 34 L48 34 L48 38 Z" fill="white"/>
+		<rect x="68" y="14" width="10" height="10" transform="rotate(45 73 19)" fill="url(#bgGrad)"/>
+		<rect x="78" y="26" width="8" height="8" transform="rotate(45 82 30)" fill="url(#bgGrad)"/>
+		<rect x="86" y="40" width="6" height="6" transform="rotate(45 89 43)" fill="url(#bgGrad)"/>
+		<rect x="58" y="6" width="6" height="6" transform="rotate(45 61 9)" fill="url(#bgGrad)"/>
+	</g>
+</svg>
