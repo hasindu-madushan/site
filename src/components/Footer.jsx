@@ -50,15 +50,6 @@ export default function Footer() {
             >
               <Github size={24} />
             </a>
-            <a
-              href="https://www.linkedin.com/in/hasindu-madushan"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 rounded-full bg-gray-800 hover:bg-primary-600 transition-colors"
-              aria-label="LinkedIn"
-            >
-              <Linkedin size={24} />
-            </a>
           </div>
         </motion.div>
       </div>

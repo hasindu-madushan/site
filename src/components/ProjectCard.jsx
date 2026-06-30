@@ -50,9 +50,20 @@ export default function ProjectCard({ project, onClick }) {
       </div>
 
       <div className="p-4">
-        <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">
-          {project.title}
-        </h3>
+        <div className="flex items-center gap-2 mb-2">
+          <h3 className="text-lg font-semibold text-gray-900 group-hover:text-primary-600 transition-colors">
+            {project.title}
+          </h3>
+        </div>
+        <div className="flex items-center gap-2 mb-2">
+          <span className="text-xs text-gray-500 font-medium">{project.year}</span>
+          {project.inProgress && (
+            <span className="status-badge">
+              <span className="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse" />
+              In Progress
+            </span>
+          )}
+        </div>
         <p className="text-gray-600 text-sm line-clamp-2 mb-3">
           {project.desc}
         </p>

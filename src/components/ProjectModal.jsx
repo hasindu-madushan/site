@@ -34,7 +34,16 @@ export default function ProjectModal({ project, onClose }) {
           onClick={(e) => e.stopPropagation()}
         >
           <div className="sticky top-0 bg-white/80 backdrop-blur-md border-b px-6 py-4 flex items-center justify-between z-10">
-            <h2 className="text-2xl font-bold text-gray-900">{project.title}</h2>
+            <div className="flex items-center gap-3">
+              <h2 className="text-2xl font-bold text-gray-900">{project.title}</h2>
+              <span className="text-sm text-gray-500 font-medium">{project.year}</span>
+              {project.inProgress && (
+                <span className="status-badge">
+                  <span className="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse" />
+                  In Progress
+                </span>
+              )}
+            </div>
             <button
               onClick={onClose}
               className="p-2 rounded-lg hover:bg-gray-100 transition-colors"
