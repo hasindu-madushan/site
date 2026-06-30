@@ -43,7 +43,7 @@ export default function Navbar() {
             transition={{ type: 'spring', stiffness: 260, damping: 20 }}
           >
             <img
-              src={`${base}img/profile-pic-1.jpg`}
+              src={`${base}img/profile-pic-1.png?v=2`}
               alt="Hasindu Madushan"
               className="w-9 h-9 rounded-full object-cover border-2 border-primary-200"
             />

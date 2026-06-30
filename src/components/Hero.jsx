@@ -64,7 +64,7 @@ export default function Hero() {
           >
             <div className="w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 rounded-full overflow-hidden border-4 border-primary-200 shadow-2xl shadow-primary-100">
               <img
-                src={`${import.meta.env.BASE_URL}img/profile-pic-1.jpg`}
+                src={`${import.meta.env.BASE_URL}img/profile-pic-1.png?v=2`}
                 alt="Hasindu Madushan"
                 className="w-full h-full object-cover"
               />
